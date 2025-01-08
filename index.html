@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <!-- <img id="img"> -->
+    <button onclick="gal1()">hello</button>
+    <button onclick="gal2()">hi</button>
+    <button onclick="gal3()"></button>
+
+
+
+    <script>
+    
+
+  
+// div 
+    let div1 = document.createElement("div");
+    div1.style.border="solid black 2px";
+    div1.style.height="45vh";
+    div1.style.width="16vw";
+    
+  document.body.appendChild(div1);
+
+  let div2 = document.createElement("div");
+  div2.style.border="solid black 2px";
+    div2.style.height="45vh";
+    div2.style.width="16vw" ;
+
+    document.body.appendChild(div2);
+
+    let div3 = document.createElement("div");
+  div3.style.border="solid black 2px";
+    div3.style.height="45vh";
+    div3.style.width="16vw" ;
+    document.body.appendChild(div3);
+   
+    let mainDiv = document.createElement("div")
+
+mainDiv.appendChild(div1)
+mainDiv.appendChild(div2)
+mainDiv.appendChild(div3)
+
+let main = document.body.appendChild(mainDiv);
+main.style.display="flex";
+main.style.alignItems="center"
+main.style.justifyContent="center";
+main.style.justifyContent="space-evenly";
+main.style.border="2px solid black";
+main.style.height="54vh";
+main.style.width="70vw" ;
+
+// button
+
+
+
+let img1=document.createElement("img")
+img1.setAttribute("src","./phto_1.jpg")
+
+///div1
+
+let img2=document.createElement("img")
+img2.setAttribute("src","./photo_4.jpg")
+
+
+/// div2
+
+
+let img3=document.createElement("img")
+img3.setAttribute("src","./photo_3.jpg")
+/// div3
+
+
+function gal1() {
+    
+    div1.innerHTML = "";
+    div2.innerHTML = "";
+    div3.innerHTML = "";
+
+    div1.append(img1);
+    img1.style.height = "45vh";
+    img1.style.width = "16vw";
+
+    div2.append(img2);
+    img2.style.height = "45vh";
+    img2.style.width = "16vw";
+
+    div3.append(img3);
+    img3.style.height = "45vh";
+    img3.style.width = "16vw";
+}
+
+function gal2() {
+   
+    div1.innerHTML = "";
+    div2.innerHTML = "";
+    div3.innerHTML = "";
+
+    div1.append(img4);
+    img4.style.height = "45vh";
+    img4.style.width = "16vw";
+
+    div2.append(img5);
+    img5.style.height = "45vh";
+    img5.style.width = "16vw";
+
+    div3.append(img6);
+    img6.style.height = "45vh";
+    img6.style.width = "16vw";
+}
+
+
+let img4=document.createElement("img")
+img4.setAttribute("src","./phot0_2.jpg")
+
+let img5=document.createElement("img")
+img5.setAttribute("src","./photo_5.jpg")
+
+
+let img6=document.createElement("img")
+img6.setAttribute("src","./photo_6.jpg")
+
+
+
+
+
+
+// img
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
